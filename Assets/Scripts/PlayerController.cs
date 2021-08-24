@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private int lineToMove = 1;
     public float lineDistance = 6; 
-    private float maxSpeed = 110;
+    private float maxSpeed = 100;
 
     void Start()
     {
@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
 
     private IEnumerator SpeedIncrease()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         if (speed < maxSpeed)
         {
             speed += 1;
